@@ -60,11 +60,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\TaskManager.BusinessLib\TaskManager.BusinessLib.csproj">
+    <ProjectReference Include="..\TaskManager.BusinessLib\TaskManager.BusinessLib.csproj">
       <Project>{4191c5b7-fb24-4e3a-9f11-b3ff606aac62}</Project>
       <Name>TaskManager.BusinessLib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\TaskManager.Entities\TaskManager.Entities.csproj">
+    <ProjectReference Include="..\TaskManager.Entities\TaskManager.Entities.csproj">
       <Project>{3131b505-15cc-424c-8369-6d92e1f98c19}</Project>
       <Name>TaskManager.Entities</Name>
     </ProjectReference>

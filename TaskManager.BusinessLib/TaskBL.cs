@@ -59,6 +59,27 @@ namespace TaskManager.BusinessLib
         /// </summary>
         /// <param name="TaskId"></param>
         /// <returns></returns>
+        public Task GetTaskByName(string Name)
+        {
+
+            try
+            {
+                using (TaskMangerContext db = new TaskMangerContext())
+                {
+                    return db.Tasks.SingleOrDefault(k => k.TaskName == Name);
+                }
+            }
+            catch (Exception exception)
+            {
+
+                throw;
+            }
+        }
+        /// <summary>
+        /// To Get specific task
+        /// </summary>
+        /// <param name="TaskId"></param>
+        /// <returns></returns>
         public Task GetTaskById(int TaskId)
         {
 

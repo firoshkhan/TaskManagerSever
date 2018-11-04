@@ -8,5 +8,6 @@ namespace TaskManager.Test
 {
     class Class2
     {
+        //test
     }
 }

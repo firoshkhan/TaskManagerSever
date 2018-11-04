@@ -19,7 +19,7 @@ namespace Test
     {
 
         [Test]
-        public void TaskControllerGetTasksByTaskIdTest()
+        public void TaskControllerGetTasksByTaskIdTest1()
         {
             var controller = new TaskController();
             var result = controller.GetTasksById(1) as OkNegotiatedContentResult<TaskManager.Entities.Task>;

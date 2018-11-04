@@ -16,11 +16,11 @@ namespace TaskManager.Entities
         [Required]
         [StringLength(20)]
         public string TaskName { get; set; }
-        public int Priority { get; set; }
+        public int? Priority { get; set; }
         [Column(TypeName ="Date")]
-        public DateTime Startdate { get; set; }
+        public DateTime? Startdate { get; set; }
         [Column(TypeName = "Date")]
-        public DateTime Enddate { get; set; }
+        public DateTime? Enddate { get; set; }
 
      
         public Task TaskParent { get; set; }

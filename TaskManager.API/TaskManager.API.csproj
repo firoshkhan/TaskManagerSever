@@ -25,6 +25,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -131,7 +132,9 @@
     <Content Include="Global.asax" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -161,6 +164,10 @@
     <ProjectReference Include="..\TaskManager.BusinessLib\TaskManager.BusinessLib.csproj">
       <Project>{4191c5b7-fb24-4e3a-9f11-b3ff606aac62}</Project>
       <Name>TaskManager.BusinessLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskManager.DataLib\TaskManager.DataLib.csproj">
+      <Project>{c9493d06-f98e-471a-93e1-26be8510ddc8}</Project>
+      <Name>TaskManager.DataLib</Name>
     </ProjectReference>
     <ProjectReference Include="..\TaskManager.Entities\TaskManager.Entities.csproj">
       <Project>{3131b505-15cc-424c-8369-6d92e1f98c19}</Project>

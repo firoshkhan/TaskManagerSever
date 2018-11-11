@@ -26,6 +26,7 @@ namespace TaskManager.BusinessLib
 
                     db.Tasks.Add(item);
                     db.SaveChanges();
+                    int id = item.TaskId;
                 }
             }
            
@@ -54,6 +55,7 @@ namespace TaskManager.BusinessLib
                 throw ;
             }
         }
+
         /// <summary>
         /// To Get specific task
         /// </summary>

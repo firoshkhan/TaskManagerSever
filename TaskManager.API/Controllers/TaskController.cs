@@ -56,7 +56,7 @@ namespace TaskManager.API
             }
             TaskBL obj = new TaskBL();
             obj.AddTask(task);
-            return Ok("Task Added Sucessfully");
+            return Ok(task.TaskId.ToString());
         }
         [Route("UpdateTask")]
         public IHttpActionResult Put(Task task)

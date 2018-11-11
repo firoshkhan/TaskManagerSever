@@ -21,8 +21,8 @@ namespace TaskManager.Entities
         public DateTime? Startdate { get; set; }
         [Column(TypeName = "Date")]
         public DateTime? Enddate { get; set; }
+        
 
-     
         public Task TaskParent { get; set; }
     }
    
